@@ -2,11 +2,10 @@ pipeline {
     agent any
     stages {
     
-    stage('git repo & clean') {
+    stage('hiii') {
             steps {
                
-               git 'https://github.com/yashowardhan01/jenkinsPractice.git'
-                
+              echo 'Hello World'
             }
         }
         stage('Hello') {
