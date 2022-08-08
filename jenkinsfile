@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    stages {
+    
+    stage('git repo & clean') {
+            steps {
+               
+                bat "git clone https://github.com/yashowardhan01/jenkinsPractice.git"
+                
+            }
+        }
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
